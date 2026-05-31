@@ -1,14 +1,10 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs/promises';
-import path from 'path';
+import { getCars } from '@/lib/data';
 
 export async function GET() {
-  try {
-    const filePath = path.join(process.cwd(), 'data', 'cars.json');
-    const fileData = await fs.readFile(filePath, 'utf8');
-    const cars = JSON.parse(fileData);
-    return NextResponse.json(cars);
-  } catch (error) {
+  const cars = await getCars();
+  if (cars.length === 0) {
     return NextResponse.json({ error: 'Failed to load cars' }, { status: 500 });
   }
+  return NextResponse.json(cars);
 }

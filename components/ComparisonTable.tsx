@@ -27,14 +27,12 @@ import {
 } from "lucide-react"
 
 export function ComparisonTable() {
-  const { 
-    selectedForCompare, 
-    allCars, 
-    toggleCompare, 
-    resetCompare, 
-    isCompareMinimized, 
-    setCompareMinimized 
-  } = useCarStore()
+  const selectedForCompare = useCarStore((state) => state.selectedForCompare)
+  const allCars = useCarStore((state) => state.allCars)
+  const toggleCompare = useCarStore((state) => state.toggleCompare)
+  const resetCompare = useCarStore((state) => state.resetCompare)
+  const isCompareMinimized = useCarStore((state) => state.isCompareMinimized)
+  const setCompareMinimized = useCarStore((state) => state.setCompareMinimized)
 
   const selectedCars = allCars.filter((car) =>
     selectedForCompare.includes(car.id)

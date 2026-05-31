@@ -15,17 +15,14 @@ import { CompareButton } from "@/components/CompareButton"
 import { CarCard } from "@/components/CarCard"
 
 export default function CarAdvisorPage() {
-  const { 
-    userQuery, 
-    setUserQuery, 
-    recommendedCars, 
-    setRecommendedCars, 
-    isLoading, 
-    setIsLoading,
-    setAllCars,
-    selectedForCompare,
-    toggleCompare
-  } = useCarStore()
+  const userQuery = useCarStore((state) => state.userQuery)
+  const setUserQuery = useCarStore((state) => state.setUserQuery)
+  const recommendedCars = useCarStore((state) => state.recommendedCars)
+  const setRecommendedCars = useCarStore((state) => state.setRecommendedCars)
+  const isLoading = useCarStore((state) => state.isLoading)
+  const setIsLoading = useCarStore((state) => state.setIsLoading)
+  const setAllCars = useCarStore((state) => state.setAllCars)
+  const selectedCount = useCarStore((state) => state.selectedForCompare.length)
 
   const [searchValue, setSearchValue] = useState("")
 
@@ -193,7 +190,7 @@ export default function CarAdvisorPage() {
 
       {/* Floating UI Feedback */}
       <AnimatePresence>
-        {selectedForCompare.length === 1 && (
+        {selectedCount === 1 && (
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}

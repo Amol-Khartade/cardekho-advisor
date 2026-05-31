@@ -2,8 +2,7 @@ import { createGoogleGenerativeAI } from '@ai-sdk/google';
 import { generateObject } from 'ai';
 import { z } from 'zod';
 import { NextResponse } from 'next/server';
-import fs from 'fs/promises';
-import path from 'path';
+import { getCars } from '@/lib/data';
 
 // Schema for a car with AI reason
 const CarSchema = z.object({
@@ -31,10 +30,7 @@ const google = createGoogleGenerativeAI({
 
 async function getLocalFallback(query: string): Promise<Car[]> {
   try {
-    const filePath = path.join(process.cwd(), 'data', 'cars.json');
-    const fileData = await fs.readFile(filePath, 'utf8');
-    const allCars: any[] = JSON.parse(fileData);
-
+    const allCars = await getCars();
     const queryLower = query.toLowerCase();
     
     // Extract price limit if exists (e.g., "under 15", "below 20", "max 15")
@@ -115,10 +111,18 @@ export async function POST(req: Request) {
   }
 
   try {
-    // Attempt Gemini Recommendation
-    const filePath = path.join(process.cwd(), 'data', 'cars.json');
-    const carsData = await fs.readFile(filePath, 'utf8');
+    const allCars = await getCars();
+    
+    // Token Optimization: Pre-filter cars if a specific price is mentioned 
+    // to reduce context window size and costs.
+    const priceMatch = query.toLowerCase().match(/(?:under|below|less than|within|max|budget of)\s*(\d+)/);
+    const priceLimit = priceMatch ? parseInt(priceMatch[1]) : null;
+    
+    const candidates = priceLimit 
+      ? allCars.filter(c => c.price_lakhs <= priceLimit + 5) // 5L headroom for alternatives
+      : allCars;
 
+    // Attempt Gemini Recommendation
     const { object } = await generateObject({
       model: google('gemini-2.0-flash'),
       schema: RecommendationSchema,
@@ -126,8 +130,8 @@ export async function POST(req: Request) {
         You are an expert Indian car consultant. 
         User Query: "${query}"
         
-        Available Cars (JSON):
-        ${carsData}
+        Available Cars (Pre-filtered for relevance):
+        ${JSON.stringify(candidates)}
         
         CRITICAL INSTRUCTIONS:
         1. STRICT FILTERING: If the user mentions a price limit (e.g., "under 15 lakhs", "below 10L"), you MUST NOT recommend any car that exceeds that price.

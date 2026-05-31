@@ -1,0 +1,502 @@
+[
+  {
+    "id": "1",
+    "make": "Maruti Suzuki",
+    "model": "Alto K10",
+    "price_lakhs": 3.99,
+    "mileage_kmpl": 24.39,
+    "safety_rating": 2,
+    "body_type": "Hatchback",
+    "features": ["Power Steering", "ABS", "Dual Airbags", "Air Conditioner"]
+  },
+  {
+    "id": "2",
+    "make": "Maruti Suzuki",
+    "model": "Swift",
+    "price_lakhs": 6.49,
+    "mileage_kmpl": 22.38,
+    "safety_rating": 3,
+    "body_type": "Hatchback",
+    "features": ["Touchscreen Infotainment", "Automatic Climate Control", "LED DRLs", "Reverse Parking Camera"]
+  },
+  {
+    "id": "3",
+    "make": "Hyundai",
+    "model": "i20",
+    "price_lakhs": 7.04,
+    "mileage_kmpl": 20.35,
+    "safety_rating": 3,
+    "body_type": "Hatchback",
+    "features": ["Sunroof", "Wireless Charger", "Bose Sound System", "BlueLink Connected Car Tech"]
+  },
+  {
+    "id": "4",
+    "make": "Tata",
+    "model": "Tiago",
+    "price_lakhs": 5.60,
+    "mileage_kmpl": 20.01,
+    "safety_rating": 4,
+    "body_type": "Hatchback",
+    "features": ["Harman Sound System", "Corner Stability Control", "Digital Instrument Cluster", "Projector Headlamps"]
+  },
+  {
+    "id": "5",
+    "make": "Tata",
+    "model": "Nexon EV",
+    "price_lakhs": 14.74,
+    "mileage_kmpl": 312,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["Regenerative Braking", "Fast Charging Support", "ZConnect App", "Electric Sunroof"]
+  },
+  {
+    "id": "6",
+    "make": "Mahindra",
+    "model": "XUV700",
+    "price_lakhs": 13.99,
+    "mileage_kmpl": 15.00,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["ADAS", "Panoramic Sunroof", "Dual 10.25-inch Screens", "Sony 12-speaker Audio"]
+  },
+  {
+    "id": "7",
+    "make": "Mahindra",
+    "model": "Thar",
+    "price_lakhs": 11.25,
+    "mileage_kmpl": 15.20,
+    "safety_rating": 4,
+    "body_type": "SUV",
+    "features": ["4WD", "Convertible Top", "Touchscreen Infotainment", "Roll Cage"]
+  },
+  {
+    "id": "8",
+    "make": "Toyota",
+    "model": "Fortuner",
+    "price_lakhs": 33.43,
+    "mileage_kmpl": 10.01,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["4WD with High/Low Range", "Ventilated Seats", "7 Airbags", "Power Tailgate"]
+  },
+  {
+    "id": "9",
+    "make": "Toyota",
+    "model": "Innova Hycross",
+    "price_lakhs": 19.77,
+    "mileage_kmpl": 23.24,
+    "safety_rating": 5,
+    "body_type": "MPV",
+    "features": ["Strong Hybrid System", "Ottoman Seats", "Panoramic Sunroof", "ADAS"]
+  },
+  {
+    "id": "10",
+    "make": "Honda",
+    "model": "City",
+    "price_lakhs": 11.82,
+    "mileage_kmpl": 17.80,
+    "safety_rating": 5,
+    "body_type": "Sedan",
+    "features": ["LaneWatch Camera", "Sunroof", "Alexa Compatibility", "Automatic Climate Control"]
+  },
+  {
+    "id": "11",
+    "make": "Kia",
+    "model": "Seltos",
+    "price_lakhs": 10.90,
+    "mileage_kmpl": 17.00,
+    "safety_rating": 3,
+    "body_type": "SUV",
+    "features": ["Head-up Display", "360 Degree Camera", "Ventilated Front Seats", "Bose Audio"]
+  },
+  {
+    "id": "12",
+    "make": "Kia",
+    "model": "Carens",
+    "price_lakhs": 10.45,
+    "mileage_kmpl": 16.50,
+    "safety_rating": 3,
+    "body_type": "MPV",
+    "features": ["6 Airbags as Standard", "Ventilated Seats", "Air Purifier", "One-touch Tumble Seats"]
+  },
+  {
+    "id": "13",
+    "make": "Skoda",
+    "model": "Slavia",
+    "price_lakhs": 11.53,
+    "mileage_kmpl": 19.47,
+    "safety_rating": 5,
+    "body_type": "Sedan",
+    "features": ["Sunroof", "Ventilated Seats", "Cruise Control", "Large Boot Space"]
+  },
+  {
+    "id": "14",
+    "make": "Volkswagen",
+    "model": "Virtus",
+    "price_lakhs": 11.56,
+    "mileage_kmpl": 19.40,
+    "safety_rating": 5,
+    "body_type": "Sedan",
+    "features": ["LED Headlamps", "Wireless Android Auto/Apple CarPlay", "ESP", "Multi-Collision Braking"]
+  },
+  {
+    "id": "15",
+    "make": "MG",
+    "model": "Hector",
+    "price_lakhs": 13.99,
+    "mileage_kmpl": 13.96,
+    "safety_rating": 3,
+    "body_type": "SUV",
+    "features": ["14-inch Infotainment", "Level 2 ADAS", "Panoramic Sunroof", "Connected Car Tech"]
+  },
+  {
+    "id": "16",
+    "make": "Maruti Suzuki",
+    "model": "Brezza",
+    "price_lakhs": 8.34,
+    "mileage_kmpl": 19.89,
+    "safety_rating": 4,
+    "body_type": "SUV",
+    "features": ["Sunroof", "Head-up Display", "360 Camera", "Wireless Charger"]
+  },
+  {
+    "id": "17",
+    "make": "Hyundai",
+    "model": "Creta",
+    "price_lakhs": 11.00,
+    "mileage_kmpl": 18.00,
+    "safety_rating": 3,
+    "body_type": "SUV",
+    "features": ["Panoramic Sunroof", "Ventilated Seats", "Electronic Parking Brake", "Bose Sound System"]
+  },
+  {
+    "id": "18",
+    "make": "Tata",
+    "model": "Punch",
+    "price_lakhs": 6.13,
+    "mileage_kmpl": 18.80,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["Harman Infotainment", "Push Button Start", "90-degree Doors", "Automatic Headlamps"]
+  },
+  {
+    "id": "19",
+    "make": "Mahindra",
+    "model": "Scorpio-N",
+    "price_lakhs": 13.60,
+    "mileage_kmpl": 14.00,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["4XPLOR Terrain Modes", "Sunroof", "Sony Audio", "Connected Car Tech"]
+  },
+  {
+    "id": "20",
+    "make": "Maruti Suzuki",
+    "model": "Ertiga",
+    "price_lakhs": 8.69,
+    "mileage_kmpl": 20.51,
+    "safety_rating": 3,
+    "body_type": "MPV",
+    "features": ["Paddle Shifters", "Cooled Cup Holders", "Roof-mounted AC vents", "SmartPlay Pro"]
+  },
+  {
+    "id": "21",
+    "make": "Renault",
+    "model": "Kwid",
+    "price_lakhs": 4.70,
+    "mileage_kmpl": 22.25,
+    "safety_rating": 1,
+    "body_type": "Hatchback",
+    "features": ["Digital Instrument Cluster", "LED DRLs", "Reverse Camera", "Touchscreen"]
+  },
+  {
+    "id": "22",
+    "make": "Renault",
+    "model": "Kiger",
+    "price_lakhs": 6.50,
+    "mileage_kmpl": 20.50,
+    "safety_rating": 4,
+    "body_type": "SUV",
+    "features": ["Wireless Charging", "PM 2.5 Air Filter", "Driving Modes", "8-inch Touchscreen"]
+  },
+  {
+    "id": "23",
+    "make": "Nissan",
+    "model": "Magnite",
+    "price_lakhs": 6.00,
+    "mileage_kmpl": 20.00,
+    "safety_rating": 4,
+    "body_type": "SUV",
+    "features": ["360 View Monitor", "Cruise Control", "Wireless Connectivity", "LED Headlamps"]
+  },
+  {
+    "id": "24",
+    "make": "Jeep",
+    "model": "Compass",
+    "price_lakhs": 20.69,
+    "mileage_kmpl": 17.10,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["Panoramic Sunroof", "4x4 Capability", "Ventilated Seats", "Alpine Sound System"]
+  },
+  {
+    "id": "25",
+    "make": "Toyota",
+    "model": "Hilux",
+    "price_lakhs": 30.40,
+    "mileage_kmpl": 10.00,
+    "safety_rating": 5,
+    "body_type": "Pickup",
+    "features": ["4x4 with Diff Lock", "Heavy-duty Suspension", "Towing Capacity", "Leather Seats"]
+  },
+  {
+    "id": "26",
+    "make": "Tata",
+    "model": "Safari",
+    "price_lakhs": 16.19,
+    "mileage_kmpl": 16.14,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["ADAS", "Ventilated Seats in 2nd Row", "Panoramic Sunroof", "JBL Audio"]
+  },
+  {
+    "id": "27",
+    "make": "Maruti Suzuki",
+    "model": "Grand Vitara",
+    "price_lakhs": 10.80,
+    "mileage_kmpl": 27.97,
+    "safety_rating": 4,
+    "body_type": "SUV",
+    "features": ["Strong Hybrid", "Panoramic Sunroof", "360 Degree Camera", "AllGrip 4WD"]
+  },
+  {
+    "id": "28",
+    "make": "Maruti Suzuki",
+    "model": "Baleno",
+    "price_lakhs": 6.66,
+    "mileage_kmpl": 22.35,
+    "safety_rating": 3,
+    "body_type": "Hatchback",
+    "features": ["Head-up Display", "360 View Camera", "Auto Dimming IRVM", "Arkamys Sound"]
+  },
+  {
+    "id": "29",
+    "make": "Hyundai",
+    "model": "Verna",
+    "price_lakhs": 11.00,
+    "mileage_kmpl": 18.60,
+    "safety_rating": 5,
+    "body_type": "Sedan",
+    "features": ["Level 2 ADAS", "Heated and Ventilated Seats", "Switchable Controls", "Sunroof"]
+  },
+  {
+    "id": "30",
+    "make": "Hyundai",
+    "model": "Venue",
+    "price_lakhs": 7.94,
+    "mileage_kmpl": 17.50,
+    "safety_rating": 3,
+    "body_type": "SUV",
+    "features": ["Home to Car with Alexa", "4-way Power Seats", "Puddle Lamps", "Sunroof"]
+  },
+  {
+    "id": "31",
+    "make": "Kia",
+    "model": "Sonet",
+    "price_lakhs": 7.99,
+    "mileage_kmpl": 18.20,
+    "safety_rating": 3,
+    "body_type": "SUV",
+    "features": ["Ventilated Seats", "Bose Sound", "Wireless Charger", "Connected Car Tech"]
+  },
+  {
+    "id": "32",
+    "make": "Mahindra",
+    "model": "Bolero Neo",
+    "price_lakhs": 9.90,
+    "mileage_kmpl": 17.20,
+    "safety_rating": 3,
+    "body_type": "SUV",
+    "features": ["MTT (Multi Terrain Technology)", "Static Bending Headlamps", "Digital Cluster", "Armrests"]
+  },
+  {
+    "id": "33",
+    "make": "Mahindra",
+    "model": "XUV300",
+    "price_lakhs": 7.99,
+    "mileage_kmpl": 17.00,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["7 Airbags", "Dual Zone Climate Control", "All-wheel Disc Brakes", "Sunroof"]
+  },
+  {
+    "id": "34",
+    "make": "Tata",
+    "model": "Harrier",
+    "price_lakhs": 15.49,
+    "mileage_kmpl": 14.60,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["Panoramic Sunroof", "ADAS", "360 View Camera", "Ventilated Seats"]
+  },
+  {
+    "id": "35",
+    "make": "Tata",
+    "model": "Altroz",
+    "price_lakhs": 6.60,
+    "mileage_kmpl": 19.33,
+    "safety_rating": 5,
+    "body_type": "Hatchback",
+    "features": ["90-degree Opening Doors", "Harman Sound System", "Rain Sensing Wipers", "iRA Connected Tech"]
+  },
+  {
+    "id": "36",
+    "make": "MG",
+    "model": "Astor",
+    "price_lakhs": 9.98,
+    "mileage_kmpl": 15.00,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["AI Personal Assistant", "Level 2 ADAS", "Panoramic Sunroof", "Heated ORVMs"]
+  },
+  {
+    "id": "37",
+    "make": "MG",
+    "model": "ZSEV",
+    "price_lakhs": 18.98,
+    "mileage_kmpl": 461,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["Panoramic Sunroof", "PM 2.5 Filter", "360 Camera", "Bluetooth Digital Key"]
+  },
+  {
+    "id": "38",
+    "make": "Honda",
+    "model": "Amaze",
+    "price_lakhs": 7.16,
+    "mileage_kmpl": 18.60,
+    "safety_rating": 4,
+    "body_type": "Sedan",
+    "features": ["Paddle Shifters", "Cruise Control", "LED Projector Lamps", "Automatic Climate Control"]
+  },
+  {
+    "id": "39",
+    "make": "Toyota",
+    "model": "Glanza",
+    "price_lakhs": 6.81,
+    "mileage_kmpl": 22.35,
+    "safety_rating": 3,
+    "body_type": "Hatchback",
+    "features": ["Heads-up Display", "360 View Camera", "Tilt & Telescopic Steering", "Auto Climate Control"]
+  },
+  {
+    "id": "40",
+    "make": "Maruti Suzuki",
+    "model": "Jimny",
+    "price_lakhs": 12.74,
+    "mileage_kmpl": 16.94,
+    "safety_rating": 3,
+    "body_type": "SUV",
+    "features": ["AllGrip Pro 4WD", "Headlamp Washer", "9-inch SmartPlay Pro+", "Rigid Axle Suspension"]
+  },
+  {
+    "id": "41",
+    "make": "Citroen",
+    "model": "C3",
+    "price_lakhs": 6.16,
+    "mileage_kmpl": 19.30,
+    "safety_rating": 2,
+    "body_type": "Hatchback",
+    "features": ["10-inch Touchscreen", "Wireless Connectivity", "Tropicalized AC", "High Ground Clearance"]
+  },
+  {
+    "id": "42",
+    "make": "Skoda",
+    "model": "Kushaq",
+    "price_lakhs": 11.59,
+    "mileage_kmpl": 19.76,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["Sunroof", "Ventilated Seats", "6 Airbags", "Electronic Stability Control"]
+  },
+  {
+    "id": "43",
+    "make": "Volkswagen",
+    "model": "Taigun",
+    "price_lakhs": 11.62,
+    "mileage_kmpl": 19.87,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["Active Cylinder Technology", "Digital Cockpit", "Sunroof", "Hill Start Assist"]
+  },
+  {
+    "id": "44",
+    "make": "Force",
+    "model": "Gurkha",
+    "price_lakhs": 16.75,
+    "mileage_kmpl": 12.00,
+    "safety_rating": 2,
+    "body_type": "SUV",
+    "features": ["Differential Locks", "Snorkel", "LED Pro-edge Headlamps", "Touchscreen"]
+  },
+  {
+    "id": "45",
+    "make": "Isuzu",
+    "model": "D-Max V-Cross",
+    "price_lakhs": 25.52,
+    "mileage_kmpl": 12.40,
+    "safety_rating": 4,
+    "body_type": "Pickup",
+    "features": ["4WD with Shift-on-the-fly", "ESC & TCS", "6 Airbags", "Power Adjustable Seats"]
+  },
+  {
+    "id": "46",
+    "make": "Tata",
+    "model": "Tigor EV",
+    "price_lakhs": 12.49,
+    "mileage_kmpl": 315,
+    "safety_rating": 4,
+    "body_type": "Sedan",
+    "features": ["Ziptron Technology", "Harman Sound System", "Automatic Climate Control", "Rear Camera"]
+  },
+  {
+    "id": "47",
+    "make": "Hyundai",
+    "model": "Ioniq 5",
+    "price_lakhs": 45.95,
+    "mileage_kmpl": 631,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["Level 2 ADAS", "V2L (Vehicle-to-Load)", "Ultra-fast Charging", "Panoramic Sunroof"]
+  },
+  {
+    "id": "48",
+    "make": "BYD",
+    "model": "Atto 3",
+    "price_lakhs": 33.99,
+    "mileage_kmpl": 521,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["Blade Battery", "Rotating Touchscreen", "ADAS", "NFC Card Key"]
+  },
+  {
+    "id": "49",
+    "make": "Maruti Suzuki",
+    "model": "Fronx",
+    "price_lakhs": 7.46,
+    "mileage_kmpl": 21.79,
+    "safety_rating": 3,
+    "body_type": "SUV",
+    "features": ["Head-up Display", "360 Camera", "Paddle Shifters", "Wireless Charger"]
+  },
+  {
+    "id": "50",
+    "make": "Kia",
+    "model": "EV6",
+    "price_lakhs": 60.95,
+    "mileage_kmpl": 708,
+    "safety_rating": 5,
+    "body_type": "SUV",
+    "features": ["Dual Curved Displays", "AR Head-up Display", "Meridian Sound System", "Remote Park Assist"]
+  }
+]
